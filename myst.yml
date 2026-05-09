@@ -48,7 +48,7 @@ project:
         - file: content/lessons/1_firstedit.md
         - file: content/lessons/1_landingpage.md
         - file: content/lessons/2_nextstep.md
-        - file: content/newfile.md
+#        - file: content/newfile.md
           children:
             - file: content/lessons/2a_plugins.md
         - file: content/lessons/reuse.md
