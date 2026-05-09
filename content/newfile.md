@@ -58,7 +58,7 @@ Put these items in an ordered list,
 1. Boron
 1. Carbon
 
-Put a line break between this sentence. \. And this sentence.
+Put a line break between this sentence. `\`.\ And this sentence.
 
 Make the following line an equation with a label,
 
