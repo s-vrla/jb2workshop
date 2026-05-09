@@ -16,18 +16,39 @@ This template:
 
 ``` {figure} figures/myst_img_tryout.jpg
 :width: 50%
+:align: margin
 :name: fig_myfirstfigure
 add file in the folder
-:align: margin
 ```
 
 Hence, the template allows you to engage with JB2 (and the underlying software MyST) _without installing any software on your own computer._ You only need a web browser and a GitHub account (we provide details on how to work locally on your own computer). For those who are comfortable installing software locally (i.e., with a CLI) and/or do not want to use the template book structure, use the [Advanced Start](./advanced_start.md) instructions, denoted with red hot 🌶.
+
+```{warning} 🌶 HOTHOTHOT
+:icon: false
+:class: dropdown
+
+This is a custom warning admonition with a custom icon, try changing it!
+```
 
 As this document serves both as a template _and_ a guide, it has the following structure:
 
 1. A quick introduction to key Jupyter Book 2, MyST and Markdown concepts.
 2. A tutorial with several steps to introduce you to editing and building your own book.
 3. Additional resources, for example, [Advanced Start instructions](./advanced_start.md) and [Software](./software.md).
+
+## Diagram
+```{mermaid}
+flowchart LR
+  Start --> Stop
+
+  A1(["Novice"]) --> B1
+  A2(["I do know"]) --> B2 & B1
+  B1(["Expert"])
+  B2(["try"])
+
+  A(["Start"]) --> B{"Decision"}
+  B --> C["Option A"] & D["Option B"]
+```
 
 ```{note}
 The template and its content are not meant as a replacement of the documentation already available on the [Jupyter Book 2 website](https://next.jupyterbook.org/) and the [MyST website](https://mystmd.org/guide). It is designed to support new users of Jupyter Book 2 and MystMD, in particular for use in workshop settings where participants may not have time or ability to install the required software on a personal computer.
