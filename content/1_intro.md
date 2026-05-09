@@ -14,6 +14,12 @@ This template:
 - includes a GitHub Action workflow to automatically build and deploy your book online,
 - provides instructions for generating a high quality PDF with Typst using a ready-to-go template, then deploy it online automatically using GitHub Actions.
 
+``` {figure} figures/myst_img_tryout.jpg
+:width: 50%
+:name: fig_myfirstfigure
+add file in the folder
+:align: margin
+```
 
 Hence, the template allows you to engage with JB2 (and the underlying software MyST) _without installing any software on your own computer._ You only need a web browser and a GitHub account (we provide details on how to work locally on your own computer). For those who are comfortable installing software locally (i.e., with a CLI) and/or do not want to use the template book structure, use the [Advanced Start](./advanced_start.md) instructions, denoted with red hot 🌶.
 
