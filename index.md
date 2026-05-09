@@ -7,9 +7,18 @@ site:
   
 no-update-date: true
 ---
+ +++ { "kind": "split-image" }
 
+# Create your landing page
 
-<div style="text-align: center">
+a great way to welcome visitors and provide clear directions!
+
+{button}`Check out the full docs: <https://mystmd.org>`
+
+![](../figures/delft.png)
+
++++
+<!-- <div style="text-align: center">
 
 # Jupyter Book 2 Workshop Template
 
@@ -24,4 +33,4 @@ _A GitHub Template repository designed for use in Jupyter Book 2 and MyST worksh
 
 <div style="text-align: center", font-size: 1.2em>
 Freek Pols, Luuk Fröling, Robert Lanzafame, Kirstie Whitaker, Jim Madge
-</div>
+</div> -->
