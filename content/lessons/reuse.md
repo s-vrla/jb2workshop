@@ -20,20 +20,20 @@ Review the [references section of the cheat sheet](#cheatsheet-ref) for a remind
 The labels you give MyST nodes are "global".
 You can refer to them in any part of your project, not just on the page where you defined them.
 
-Reference the equation with label `eq_newton` from the cheat sheet [here](x).
+Reference the equation with label `eq_newton` from the cheat sheet [here](eq_newton).
 :::
 
 :::{exercise} Label anything
-Add a label to this paragraph.
+=(exercise_p) Add a label to this paragraph.
 
-And reference it [here](x).
+And reference it [here](exercise_p).
 :::
 
 
 ### External MyST projects
 
 The [MyST guide](xref:myst-guide) has already been added as an external reference for this project.
-It has been given the label `myst-guide`, so it can be referenced with `[](xref:myst-guide)`.
+It has been given the label `myst-guide`, so it can be referenced with [](xref:myst-guide).
 
 :::{literalinclude} ../../myst.yml
 :start-at: references
@@ -63,10 +63,12 @@ This is helpful if you want to have the same content in two places, without repe
 Embed the table `tl_basic_formatting` from the cheat sheet using the `embed` directive syntax
 
 ```markdown
-:::{embed} label
+:::{embed} #tl_basic_formatting
 :::
 ```
 ::::
+
+{embed} #tl_basic_formatting
 
 ### External MyST projects
 
@@ -77,9 +79,15 @@ Embed the figure `sunset-figure` from the [MyST guide](xref:myst-guide)
 
 :::{hint}
 Remember that to reference an external MyST project you use `xref:` and the label given to the project in `myst.yml`.
-In this case that is `xref:myst-guide`.
+In this case that is 
+
+{embed} xref:myst-guide#sunset-figure
 :::
 ::::
+
+{embed} #xref:myst-guide:sunset-figure
+
+{embed} xref:myst-guide #sunset-figure
 
 ## Referencing other internet resources
 
@@ -91,10 +99,12 @@ Like with MyST references, some links to non-MyST resources are handled speciall
 Use `[](wiki:)` to create a reference to your favourite Wikipedia article.
 :::
 
+[](wiki:https://en.wikipedia.org/wiki/Python_(programming_language))
+
 ### DOIs
 
 ::::{exercise} Reference a document by its DOI
-Use `[](doi:)` to create a reference to a document.
+Use [](doi:https://doi.org/10.5281/zenodo.7105790) to create a reference to a document.
 
 :::{hint}
 You can find many documents with DOIs on [Zenodo](https://zenodo.org/)
@@ -106,7 +116,7 @@ You can find many documents with DOIs on [Zenodo](https://zenodo.org/)
 Links to GitHub have dynamic tooltips which can show issues, pull requests, and lines of code.
 
 ::::{exercise} Reference items in GitHub
-Use `[](https://github.com)` to create a references to GitHub objects.
+Use []([https://github.com](https://github.com/jupyter-book/mystmd/pull/2845)) to create a references to GitHub objects.
 
 :::{hint}
 If you are not sure which GitHub repository to use, try [`mystmd`](https://github.com/jupyter-book/mystmd).
