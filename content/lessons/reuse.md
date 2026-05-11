@@ -24,11 +24,12 @@ Reference the equation with label `eq_newton` from the cheat sheet [here](eq_new
 :::
 
 :::{exercise} Label anything
-=(exercise_p) Add a label to this paragraph.
+(exercise_p)= Add a label to this paragraph.
 
 And reference it [here](exercise_p).
 :::
 
+[here](exercise_p)
 
 ### External MyST projects
 
@@ -69,6 +70,10 @@ Embed the table `tl_basic_formatting` from the cheat sheet using the `embed` dir
 ::::
 
 {embed} #tl_basic_formatting
+
+![](#tl_basic_formatting)
+
+[](admonitions.md)
 
 ### External MyST projects
 
